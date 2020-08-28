@@ -1,0 +1,70 @@
+@import "navbar";
+
+.panel {
+  display: flex;
+  border: 1px solid @beige;
+  border-radius: 10px;
+  font-family: @mali;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.panelBtn {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.movieTitle {
+  font-family: @mali;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.content {
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 10;
+}
+
+.contentText {
+  padding: 10px 15px;
+}
+
+.chevron {
+  width: 20px;
+}
+
+.rtscore {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.bgSpace {
+  background-color: @space;
+  color: white;
+}
+
+.textWhite {
+  color: white;
+}
+
+.wikipediaLink {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .movieTitle {
+    text-align: left;
+  }
+}

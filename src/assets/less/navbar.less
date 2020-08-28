@@ -1,0 +1,113 @@
+// FONT FAMILY
+@mali: "Mali", cursive;
+@rocksalt: "Rock Salt", cursive;
+
+// COLOR
+@space: #1a1b41;
+@salsa: #f8333c;
+@nickel: #717568;
+@beige: #b99450;
+
+.mainbg {
+  background: url(../images/bg.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5vmin 7vmin 1.5vmin 7vmin;
+  top: 0;
+  background-color: transparent;
+}
+
+.menu {
+  display: flex;
+  margin-right: 15vmin;
+  justify-content: space-between;
+}
+
+.navItem {
+  text-decoration: none;
+  font-family: @rocksalt;
+  margin-right: 10px;
+  color: @space;
+  font-size: larger;
+  &:hover {
+    color: @salsa;
+    font-weight: bold;
+  }
+}
+
+.mr4 {
+  margin-right: 4vmin;
+}
+
+.landing {
+  padding: 35vmin 0;
+  margin-left: 35vmin;
+}
+
+.heading {
+  font-family: @rocksalt;
+  font-size: 6vmin;
+  line-height: 10vmin;
+  letter-spacing: 0.6vmin;
+  color: @beige;
+  margin-bottom: 0;
+}
+
+.subheading {
+  font-family: @mali;
+  color: @nickel;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+  letter-spacing: 0.3vmin;
+}
+
+.explore {
+  border: 2px solid @beige;
+  background-color: @beige;
+  padding: 5px 30px;
+  border-radius: 25px;
+  font-family: @mali;
+  color: white;
+  font-size: 20px;
+  &:hover {
+    color: @beige;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid @beige;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainbg {
+    background: url(../images/bg-mobile.webp) no-repeat center center fixed;
+  }
+  .nav {
+    position: static;
+    display: inline;
+    padding: 12vmin 5vmin;
+  }
+  .menu {
+    margin-right: 0;
+    padding: 0 5vmin;
+  }
+
+  .landing {
+    padding: 20vmin 5vmin 100% 5vmin;
+    margin-left: 5vmin;
+  }
+}

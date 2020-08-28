@@ -1,0 +1,70 @@
+@import "navbar";
+
+.titleSection {
+  padding-top: 15vmin;
+  margin-left: 35vmin;
+}
+
+.title {
+  font-family: @rocksalt;
+  font-size: 6vmin;
+  line-height: 10vmin;
+  letter-spacing: 0.6vmin;
+  color: @beige;
+}
+
+// .filterInput {
+//   background-color: transparent;
+//   padding: 10px 20px;
+//   width: 65vmin;
+//   border: 1px solid @nickel;
+//   border-radius: 25px;
+//   font-size: 20px;
+//   &:focus {
+//     outline: none;
+//     background-color: white;
+//     border: 2px solid @beige;
+//     color: @space;
+//   }
+// }
+
+// .search {
+//   border: 2px solid @beige;
+//   background-color: @beige;
+//   padding: 10px 30px;
+//   border-radius: 25px;
+//   font-family: @mali;
+//   color: white;
+//   font-size: 16px;
+//   margin-left: 15px;
+//   &:hover {
+//     color: @beige;
+//     font-weight: bolder;
+//     background-color: transparent;
+//     border: 2px solid @beige;
+//   }
+// }
+
+.accordionCont {
+  margin: 12vmin 35vmin 0 35vmin;
+  padding-bottom: 20vmin;
+}
+
+.loading {
+  margin: 15vmin 30vmin;
+  width: 20vmin;
+}
+
+@media screen and (max-width: 768px) {
+  .accordionCont {
+    margin: 8vmin 5vmin 0 5vmin;
+    padding-bottom: 10vmin;
+  }
+  .titleSection {
+    padding-top: 15vmin;
+    margin-left: 5vmin;
+  }
+  .loading {
+    margin: 15vmin 30vmin 100% 30vmin;
+  }
+}

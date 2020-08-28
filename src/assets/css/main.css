@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rock Salt Regular'), local('RockSalt-Regular'), url(https://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZbsA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Mali Light'), local('Mali-Light'), url(https://fonts.gstatic.com/s/mali/v3/N0bV2SRONuN4QIbmKlQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Mali Regular'), local('Mali-Regular'), url(https://fonts.gstatic.com/s/mali/v3/N0ba2SRONuN4eCo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Mali Medium'), local('Mali-Medium'), url(https://fonts.gstatic.com/s/mali/v3/N0bV2SRONuN4QN7nKlQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Mali SemiBold'), local('Mali-SemiBold'), url(https://fonts.gstatic.com/s/mali/v3/N0bV2SRONuN4QPLgKlQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Mali Bold'), local('Mali-Bold'), url(https://fonts.gstatic.com/s/mali/v3/N0bV2SRONuN4QJbhKlQ.ttf) format('truetype');
+}
+.mainbg {
+  background: url(../images/bg.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5vmin 7vmin 1.5vmin 7vmin;
+  top: 0;
+  background-color: transparent;
+}
+.menu {
+  display: flex;
+  margin-right: 15vmin;
+  justify-content: space-between;
+}
+.navItem {
+  text-decoration: none;
+  font-family: "Rock Salt", cursive;
+  margin-right: 10px;
+  color: #1a1b41;
+  font-size: larger;
+}
+.navItem:hover {
+  color: #f8333c;
+  font-weight: bold;
+}
+.mr4 {
+  margin-right: 4vmin;
+}
+.landing {
+  padding: 35vmin 0;
+  margin-left: 35vmin;
+}
+.heading {
+  font-family: "Rock Salt", cursive;
+  font-size: 6vmin;
+  line-height: 10vmin;
+  letter-spacing: 0.6vmin;
+  color: #b99450;
+  margin-bottom: 0;
+}
+.subheading {
+  font-family: "Mali", cursive;
+  color: #717568;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+  letter-spacing: 0.3vmin;
+}
+.explore {
+  border: 2px solid #b99450;
+  background-color: #b99450;
+  padding: 5px 30px;
+  border-radius: 25px;
+  font-family: "Mali", cursive;
+  color: white;
+  font-size: 20px;
+}
+.explore:hover {
+  color: #b99450;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 2px solid #b99450;
+}
+@media screen and (max-width: 768px) {
+  .mainbg {
+    background: url(../images/bg-mobile.webp) no-repeat center center fixed;
+  }
+  .nav {
+    position: static;
+    display: inline;
+    padding: 12vmin 5vmin;
+  }
+  .menu {
+    margin-right: 0;
+    padding: 0 5vmin;
+  }
+  .landing {
+    padding: 20vmin 5vmin 100% 5vmin;
+    margin-left: 5vmin;
+  }
+}
+.titleSection {
+  padding-top: 15vmin;
+  margin-left: 35vmin;
+}
+.title {
+  font-family: "Rock Salt", cursive;
+  font-size: 6vmin;
+  line-height: 10vmin;
+  letter-spacing: 0.6vmin;
+  color: #b99450;
+}
+.accordionCont {
+  margin: 12vmin 35vmin 0 35vmin;
+  padding-bottom: 20vmin;
+}
+.loading {
+  margin: 15vmin 30vmin;
+  width: 20vmin;
+}
+@media screen and (max-width: 768px) {
+  .accordionCont {
+    margin: 8vmin 5vmin 0 5vmin;
+    padding-bottom: 10vmin;
+  }
+  .titleSection {
+    padding-top: 15vmin;
+    margin-left: 5vmin;
+  }
+  .loading {
+    margin: 15vmin 30vmin 100% 30vmin;
+  }
+}
+.panel {
+  display: flex;
+  border: 1px solid #b99450;
+  border-radius: 10px;
+  font-family: "Mali", cursive;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.panelBtn {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.panelBtn:focus {
+  outline: none;
+}
+.movieTitle {
+  font-family: "Mali", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.content {
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 10;
+}
+.contentText {
+  padding: 10px 15px;
+}
+.chevron {
+  width: 20px;
+}
+.rtscore {
+  margin-top: 10px;
+  font-style: italic;
+}
+.bgSpace {
+  background-color: #1a1b41;
+  color: white;
+}
+.textWhite {
+  color: white;
+}
+.wikipediaLink {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .movieTitle {
+    text-align: left;
+  }
+}
