@@ -77,6 +77,21 @@
   color: #f8333c;
   font-weight: bold;
 }
+.navHome {
+  text-decoration: none;
+  font-family: "Rock Salt", cursive;
+  margin-right: 10px;
+  color: #1a1b41;
+  font-size: larger;
+  background-color: #1a1b41;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #b99450;
+}
+.navHome:hover {
+  color: #f8333c;
+  font-weight: bold;
+}
 .mr4 {
   margin-right: 4vmin;
 }
@@ -115,7 +130,7 @@
   background-color: transparent;
   border: 2px solid #b99450;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .mainbg {
     background: url(../images/bg-mobile.webp) no-repeat center center fixed;
   }
@@ -124,9 +139,23 @@
     display: inline;
     padding: 12vmin 5vmin;
   }
+  .navItem {
+    margin-top: 5vmin;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainbg {
+    background: url(../images/bg-ipad.webp) no-repeat center center fixed;
+  }
+  .nav {
+    padding: 3vmin 5vmin;
+  }
   .menu {
-    margin-right: 0;
+    margin-right: 5vmin;
     padding: 0 5vmin;
+  }
+  .navItem {
+    text-decoration: underline;
   }
   .landing {
     padding: 20vmin 5vmin 100% 5vmin;
@@ -152,7 +181,7 @@
   margin: 15vmin 30vmin;
   width: 20vmin;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .accordionCont {
     margin: 8vmin 5vmin 0 5vmin;
     padding-bottom: 10vmin;
@@ -160,6 +189,9 @@
   .titleSection {
     padding-top: 15vmin;
     margin-left: 5vmin;
+  }
+  .title {
+    font-size: 5vmin;
   }
   .loading {
     margin: 15vmin 30vmin 100% 30vmin;
@@ -218,7 +250,7 @@
   color: white;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .movieTitle {
     text-align: left;
   }

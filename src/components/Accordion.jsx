@@ -12,6 +12,7 @@ export default function Accordion(props) {
     setHeightState(setActive === "bgSpace" ? "0px" : "100%");
   };
 
+  // variable for wikipedia link
   let linkDirector, linkProducer;
   if (props.film) {
     linkDirector =

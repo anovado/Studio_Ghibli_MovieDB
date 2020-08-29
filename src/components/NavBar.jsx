@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function NavBar(props) {
+function NavBar() {
   return (
     <div className="nav">
-      <Link to="" className="navItem">
+      <Link to="" className="navHome">
         Studio Ghibli MDB
       </Link>
       <div className="menu">
